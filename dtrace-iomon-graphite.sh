@@ -229,40 +229,6 @@ profile:::tick-1sec
 / ticks == 0 /
 {
 
-/*
-       normalize(@nfs_tm,TIMER);
-       normalize(@nfs_mx,TIMER);
-       normalize(@nfs_ct,TIMER);
-       normalize(@nfs_sz,TIMER);
-
-       normalize(@io_tm,TIMER);
-       normalize(@io_mx,TIMER);
-       normalize(@io_ct,TIMER);
-       normalize(@io_sz,TIMER);
-
-       normalize(@zfs_tm,TIMER);
-       normalize(@zfs_ct,TIMER);
-       normalize(@zfs_sz,TIMER);
-       normalize(@zfs_mx,TIMER);
-
-       printa("nfs_tm ,%s,%@d\n",@nfs_tm);
-
-       printa("nfs_tm ,%s,%@d\n",@nfs_tm);
-       printa("nfs_mx ,%s,%@d\n",@nfs_mx);
-       printa("nfs_ct ,%s,%@d\n",@nfs_ct);
-       printa("nfs_sz ,%s,%@d\n",@nfs_sz);
-
-       printa("io_tm  ,%s,%@d\n",@io_tm);
-       printa("io_mx  ,%s,%@d\n",@io_mx);
-       printa("io_ct  ,%s,%@d\n",@io_ct);
-       printa("io_sz  ,%s,%@d\n",@io_sz);
-
-       printa("zfs_tm ,%s,%@d\n",@zfs_tm);
-       printa("zfs_ct ,%s,%@d\n",@zfs_ct);
-       printa("zfs_sz ,%s,%@d\n",@zfs_sz);
-       printa("zfs_mx ,%s,%@d\n",@zfs_mx);
-*/
-
        normalize(@nfs_tm,TIMER);
        printa("nfs%d_tm ,%s,%@d\n",@nfs_tm);
        printa("nfs%d_mx ,%s,%@d\n",@nfs_mx);
@@ -349,8 +315,6 @@ profile:::tick-1sec
        clear(@io_mx);
        clear(@nfs_mx);
        clear(@zfs_mx);
-
-
 }
 
 profile:::tick-1sec
